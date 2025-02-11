@@ -1,0 +1,1 @@
+In Objective-C, a subtle bug can arise from the interaction between KVO (Key-Value Observing) and memory management. If an observer is not removed properly when it's no longer needed (e.g., when a view controller is deallocated), it can lead to crashes or unexpected behavior.  The observer might try to access deallocated objects, causing a EXC_BAD_ACCESS error.
